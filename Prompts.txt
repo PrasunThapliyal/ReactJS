@@ -1,0 +1,113 @@
+16 Sept 2025
+------------
+
+-------------------------------------------------------------------------------
+Gemini:
+Write a prompt in the Prompt Engineering style that I can enter in ChatGPT to do the following:
+
+Considering that I'm a beginner programmer in Javascript, TypeScript and ReactJS, I would like to enhance my skills by hands on project.
+Please create a project using Typescript and ReactJS / Vite, giving step by step instructions on how to setup the environment and how to build/run.
+
+My development environment already has Windows 11 laptop with WSL2 (Ubuntu) installed.
+I do not have node or anything yet installed in WSL2
+I would also like to use Visual Studio Code for development. Please suggest if you have any recommended extensions.
+
+The project:
+I would like to build a mobile-first, responsive app as follows.
+The home page should have an image containing an SVG I already have. Please have the page background to match the SVG background (it is a space-like dark background, and the SVG has a pencil-like sketch of a rocket flying towards moon).
+Under the image, there should be 2 lines of text: "The Space Rocket Project", "Click to continue".
+Both the image and these text lines should be centered in the page. Be asthetic in the choice of font etc.
+
+The image click should bring up a chat-gpt like or Gemini like chat interface, and the image can fade away, perhaps as a transition
+-------------------------------------------------------------------------------
+ChatGPT:
+Act as a senior software engineer and technical mentor. Your task is to provide a beginner-friendly, step-by-step guide for setting up a development environment and building a specific project. The user is a beginner in JavaScript, TypeScript, and ReactJS.
+
+**User's Environment:**
+* **Operating System:** Windows 11
+* **Subsystem:** WSL2 (Ubuntu)
+* **IDE:** Visual Studio Code
+* **Goal:** Build a mobile-first, responsive web application with a specific user interface.
+
+**Project Requirements:**
+1.  **Framework:** ReactJS with Vite.
+2.  **Language:** TypeScript.
+3.  **UI/UX:**
+    * **Home Page:** A central landing page with a dark, space-like background.
+    * **Content:**
+        * A centered SVG image of a space rocket.
+        * Two lines of centered text below the image: "The Space Rocket Project" and "Click to continue".
+    * **Interaction:** Clicking anywhere on the home page should trigger a transition.
+    * **Transition:** The home page content (image and text) should fade out smoothly.
+    * **Next Page:** A new page with a simple chat interface (similar to ChatGPT or Gemini).
+
+**Instructions for the response:**
+1.  **Initial Setup:** Provide clear, numbered instructions for setting up the development environment from scratch within WSL2 (Ubuntu). This must include:
+    * Installing Node.js and npm.
+    * Installing Visual Studio Code.
+    * Configuring Visual Studio Code for WSL2, including the necessary remote extensions.
+    * Suggesting a short list of highly recommended VS Code extensions for React, TypeScript, and ESLint.
+
+2.  **Project Creation:** Guide the user through creating a new React/TypeScript/Vite project using the command line.
+
+3.  **Code Implementation:** Break down the coding process into logical, manageable steps. For each step, provide the exact code snippets and explain where the code should be placed (e.g., `src/App.tsx`, `src/styles/index.css`).
+    * **Step A: Styling:** Explain how to set up the global dark background and font styling.
+    * **Step B: SVG Integration:** Explain how to correctly import and display the SVG image component.
+    * **Step C: Components:** Provide the code for the main `HomePage` component that displays the SVG, text, and handles the click event.
+    * **Step D: State Management & Routing:** Explain how to use React state (e.g., `useState`) to manage the transition from the home page to the chat interface, without needing a full-fledged router for this simple example.
+    * **Step E: Transition & Animation:** Provide CSS code for the smooth fade-out effect.
+    * **Step F: Chat Interface:** Provide a placeholder for the chat interface component to be built later, focusing on the main layout for now.
+
+4.  **Final Instructions:** Conclude with clear instructions on how to run the development server and view the project in the browser. Remind the user about the importance of saving their files.
+
+**Tone and Style:**
+* Use a clear, concise, and encouraging tone suitable for a beginner.
+* Avoid overly complex jargon.
+* Use code blocks with language identifiers (e.g., `javascript`, `bash`).
+* Ensure every step is a logical progression from the previous one.
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------

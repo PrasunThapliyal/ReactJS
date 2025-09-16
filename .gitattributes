@@ -1,0 +1,32 @@
+# Ensure consistent line endings across OS
+* text=auto eol=lf
+
+# Treat these as text always
+*.js text
+*.ts text
+*.tsx text
+*.css text
+*.html text
+*.json text
+*.md text
+*.yml text
+*.yaml text
+
+# Binary files (don’t diff)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.mp4 binary
+*.mp3 binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Lockfiles - always normalize to LF
+package-lock.json text eol=lf
+yarn.lock text eol=lf
+pnpm-lock.yaml text eol=lf
