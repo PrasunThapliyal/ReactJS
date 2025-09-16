@@ -14,7 +14,28 @@ code .
 Follow ChtGPT instructions ..
 -------------------------------------------------------------------------------
 From ChatGPT:
+mkdir spacerocket
+cd spacerocket
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y curl build-essential
+--
+Install nvm (Node Version Manager) and Node LTS:
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.6/install.sh | bash
+# load nvm into the current shell (or just close/open the terminal)
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# install Node LTS and use it
+nvm install --lts
+nvm use --lts
+
+# verify
+node -v -> v22.19.0
+npm -v -> 10.9.3
+--
+pwd: /root/dev/SpaceRocket/spacerocket
 npm create vite@latest . -- --template react-ts
+npm install
+
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
 -------------------------------------------------------------------------------
