@@ -1,0 +1,171 @@
+/* src/styles/index.css */
+
+/* Theme variables */
+:root {
+  --bg1: #020617;
+  --bg2: #081229;
+  --text: #e6f7ff;
+  --muted: #9fb7c6;
+  --accent: #7bdff6;
+}
+
+/* Full height and nice sans font */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Space-like background (gradient + faint repeated "stars" pattern) */
+body {
+  background: radial-gradient(
+    ellipse at bottom,
+    var(--bg2) 0%,
+    var(--bg1) 100%
+  );
+  background-attachment: fixed;
+}
+
+/* subtle star field overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.9) 1px,
+      transparent 1px
+    ),
+    radial-gradient(circle, rgba(255, 255, 255, 0.6) 1px, transparent 1px);
+  background-size: 120px 120px, 60px 60px;
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+/* App root layout */
+.app-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Home page styles ---------- */
+.home-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.home-content {
+  text-align: center;
+  transition: opacity 600ms ease, transform 600ms ease;
+  /* ensure pointer events for child elements */
+  pointer-events: none;
+}
+
+.home-content svg {
+  display: block;
+  margin: 0 auto 18px;
+  width: clamp(140px, 28vw, 220px);
+  height: auto;
+}
+
+.home-content h1 {
+  margin: 8px 0 4px;
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  letter-spacing: 0.6px;
+}
+
+.home-content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* fade out state applied to container */
+.fade-out .home-content {
+  opacity: 0;
+  transform: translateY(-18px) scale(0.98);
+}
+
+/* ---------- Chat page layout (placeholder) ---------- */
+.chat-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.chat-header {
+  padding: 12px 16px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+}
+
+.chat-main {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* simple message style */
+.message {
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  max-width: 80%;
+}
+
+/* bot message */
+.message.bot {
+  background: rgba(255, 255, 255, 0.04);
+  align-self: flex-start;
+}
+
+/* footer input */
+.chat-footer {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.01), transparent);
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+  outline: none;
+}
+
+.send-btn {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: #012;
+  font-weight: 600;
+}
